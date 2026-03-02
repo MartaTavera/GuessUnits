@@ -233,6 +233,123 @@ const svgPool = `
   <text x="159" y="154" text-anchor="middle" font-size="13" font-weight="bold" fill="#0891b2">50 ___</text>
 </svg>`;
 
+const svgCoke = `
+<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:160px" font-family="'Segoe UI',sans-serif">
+  <!-- Can body -->
+  <rect x="58" y="40" width="84" height="160" fill="#dc2626" rx="6"/>
+  <!-- Top ellipse -->
+  <ellipse cx="100" cy="40" rx="42" ry="10" fill="#b91c1c"/>
+  <!-- Bottom ellipse -->
+  <ellipse cx="100" cy="200" rx="42" ry="10" fill="#b91c1c"/>
+  <!-- Highlight -->
+  <rect x="64" y="40" width="12" height="160" fill="#ef4444" rx="4" opacity="0.5"/>
+  <!-- White band top -->
+  <rect x="58" y="52" width="84" height="12" fill="#fff" opacity="0.15"/>
+  <!-- White band bottom -->
+  <rect x="58" y="176" width="84" height="12" fill="#fff" opacity="0.15"/>
+  <!-- Label text -->
+  <text x="100" y="115" text-anchor="middle" font-size="18" font-weight="bold" fill="white">Coca</text>
+  <text x="100" y="137" text-anchor="middle" font-size="18" font-weight="bold" fill="white">Cola</text>
+  <!-- Tab -->
+  <ellipse cx="100" cy="32" rx="14" ry="5" fill="#9ca3af" stroke="#6b7280" stroke-width="1"/>
+  <rect x="94" y="26" width="12" height="10" fill="#d1d5db" rx="2"/>
+  <!-- Volume label -->
+  <rect x="60" y="208" width="80" height="22" rx="5" fill="white" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="100" y="223" text-anchor="middle" font-size="13" font-weight="bold" fill="#0891b2">330 ___</text>
+</svg>`;
+
+const svgToilet = `
+<svg viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:240px" font-family="'Segoe UI',sans-serif">
+  <!-- Cistern (tank) -->
+  <rect x="20" y="15" width="110" height="90" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2.5" rx="4"/>
+  <!-- Water inside cistern -->
+  <rect x="25" y="50" width="100" height="50" fill="#bae6fd" rx="2"/>
+  <!-- Cistern lid -->
+  <rect x="16" y="10" width="118" height="12" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2" rx="3"/>
+  <!-- Cistern label -->
+  <rect x="165" y="42" width="82" height="22" rx="5" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="206" y="57" text-anchor="middle" font-size="13" font-weight="bold" fill="#0891b2">9 ___</text>
+  <line x1="165" y1="53" x2="133" y2="53" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,3"/>
+  <!-- Pipe connecting cistern to bowl -->
+  <rect x="55" y="105" width="20" height="20" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+  <!-- Bowl outer -->
+  <path d="M18,125 Q18,215 75,228 Q130,215 142,125 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2.5"/>
+  <!-- Bowl water -->
+  <ellipse cx="80" cy="190" rx="42" ry="18" fill="#bae6fd"/>
+  <!-- Seat -->
+  <path d="M15,128 Q15,145 75,148 Q135,145 135,128" fill="none" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
+  <!-- Flush arrow -->
+  <path d="M110,62 Q130,62 130,80 Q130,96 112,96" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="108,90 115,96 108,102" fill="#3b82f6"/>
+  <text x="185" y="90" text-anchor="middle" font-size="10" fill="#3b82f6">per flush</text>
+</svg>`;
+
+const svgCar = `
+<svg viewBox="0 0 300 170" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:300px" font-family="'Segoe UI',sans-serif">
+  <!-- Shadow -->
+  <ellipse cx="150" cy="148" rx="118" ry="8" fill="#e2e8f0"/>
+  <!-- Body lower -->
+  <rect x="30" y="95" width="240" height="45" fill="#3b82f6" rx="4"/>
+  <!-- Body upper (cabin) -->
+  <path d="M75,95 Q90,52 125,46 L190,46 Q220,52 230,95 Z" fill="#60a5fa"/>
+  <!-- Windows -->
+  <path d="M88,93 Q96,60 125,56 L165,56 Q175,60 178,93 Z" fill="#bae6fd" opacity="0.8"/>
+  <line x1="135" y1="56" x2="133" y2="93" stroke="#93c5fd" stroke-width="2"/>
+  <!-- Door lines -->
+  <line x1="130" y1="95" x2="130" y2="140" stroke="#2563eb" stroke-width="1.5"/>
+  <!-- Wheels -->
+  <circle cx="78" cy="140" r="22" fill="#1e293b"/>
+  <circle cx="78" cy="140" r="12" fill="#64748b"/>
+  <circle cx="78" cy="140" r="5" fill="#94a3b8"/>
+  <circle cx="218" cy="140" r="22" fill="#1e293b"/>
+  <circle cx="218" cy="140" r="12" fill="#64748b"/>
+  <circle cx="218" cy="140" r="5" fill="#94a3b8"/>
+  <!-- Headlight -->
+  <rect x="260" y="106" width="14" height="10" fill="#fef08a" rx="2"/>
+  <!-- Bumpers -->
+  <rect x="264" y="116" width="10" height="20" fill="#93c5fd" rx="2"/>
+  <rect x="26" y="116" width="10" height="20" fill="#93c5fd" rx="2"/>
+  <!-- Weight label -->
+  <rect x="95" y="155" width="110" height="22" rx="5" fill="white" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="150" y="170" text-anchor="middle" font-size="13" font-weight="bold" fill="#0891b2">1.5 ___</text>
+</svg>`;
+
+const svgPlane = `
+<svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:320px" font-family="'Segoe UI',sans-serif">
+  <!-- Sky -->
+  <rect width="320" height="180" fill="#e0f2fe" rx="10"/>
+  <!-- Clouds -->
+  <ellipse cx="60" cy="38" rx="34" ry="14" fill="white" opacity="0.8"/>
+  <ellipse cx="85" cy="32" rx="28" ry="16" fill="white" opacity="0.9"/>
+  <ellipse cx="260" cy="50" rx="28" ry="11" fill="white" opacity="0.8"/>
+  <!-- Fuselage -->
+  <ellipse cx="158" cy="96" rx="118" ry="24" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <!-- Nose -->
+  <path d="M276,96 Q305,96 308,100 Q305,104 276,104" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+  <!-- Tail fin -->
+  <path d="M46,96 Q40,70 55,62 Q62,72 70,96 Z" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+  <!-- Main wings -->
+  <path d="M170,96 Q175,68 230,52 Q235,60 220,80 Q200,86 190,96 Z" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+  <path d="M170,100 Q175,128 230,144 Q235,136 220,116 Q200,110 190,100 Z" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+  <!-- Tail wings -->
+  <path d="M68,90 Q65,76 88,68 Q90,74 85,90 Z" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.2"/>
+  <path d="M68,106 Q65,120 88,128 Q90,122 85,106 Z" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.2"/>
+  <!-- Windows -->
+  <circle cx="200" cy="91" r="5" fill="#bae6fd" stroke="#93c5fd" stroke-width="1"/>
+  <circle cx="218" cy="91" r="5" fill="#bae6fd" stroke="#93c5fd" stroke-width="1"/>
+  <circle cx="236" cy="91" r="5" fill="#bae6fd" stroke="#93c5fd" stroke-width="1"/>
+  <circle cx="254" cy="91" r="5" fill="#bae6fd" stroke="#93c5fd" stroke-width="1"/>
+  <circle cx="272" cy="93" r="4" fill="#bae6fd" stroke="#93c5fd" stroke-width="1"/>
+  <!-- Door -->
+  <rect x="184" y="82" width="10" height="26" rx="2" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+  <!-- Engine -->
+  <ellipse cx="205" cy="112" rx="18" ry="8" fill="#94a3b8" stroke="#64748b" stroke-width="1.5"/>
+  <ellipse cx="205" cy="108" rx="14" ry="5" fill="#64748b"/>
+  <!-- Weight label -->
+  <rect x="95" y="150" width="110" height="22" rx="5" fill="white" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="150" y="165" text-anchor="middle" font-size="13" font-weight="bold" fill="#0891b2">300 ___</text>
+</svg>`;
+
 // ── Questions ─────────────────────────────────────────────────────────────────
 
 const questions = [
@@ -313,6 +430,51 @@ const questions = [
     ],
     explanation: "A swimming pool length is measured in <strong>metres (m)</strong>.<br>An Olympic pool is exactly 50m — roughly the height of a 15-storey building laid flat. In centimetres it would be bathtub-sized; in kilometres it would be a canal."
   }
+  ,
+  {
+    scenario: "A standard can of Coke holds 330 ___.<br>Which unit makes sense for the liquid inside a drinks can?",
+    svg: svgCoke,
+    options: [
+      { unit: "ml",     meaning: "— millilitres: a small cup of liquid (330ml fills a large mug)", correct: true },
+      { unit: "litres", meaning: "— litres: like 1.5 large water bottles (far too much for a can)", correct: false },
+      { unit: "cl",     meaning: "— centilitres: 33cl is actually the same as 330ml — but ml is the standard label on cans", correct: false },
+      { unit: "m³",     meaning: "— cubic metres: about a bathtub full of liquid (way too large)", correct: false },
+    ],
+    explanation: "A drinks can holds <strong>330 ml (millilitres)</strong>.<br>Millilitres are used for small liquid volumes. 330ml is about the size of a large mug — you can feel the weight in your hand. Litres are used for bigger containers like bottles and cartons."
+  },
+  {
+    scenario: "A household toilet cistern holds about 9 ___ of water, which is released with every flush.<br>Which unit makes sense?",
+    svg: svgToilet,
+    options: [
+      { unit: "ml",     meaning: "— millilitres: about two teaspoons of water (nowhere near enough to flush)", correct: false },
+      { unit: "litres", meaning: "— litres: about 4–5 large bottles of water per flush (realistic for a cistern)", correct: true },
+      { unit: "cl",     meaning: "— centilitres: less than a glass of water (not enough to flush)", correct: false },
+      { unit: "m³",     meaning: "— cubic metres: 9,000 litres per flush (a small swimming pool each time)", correct: false },
+    ],
+    explanation: "A toilet cistern holds about <strong>9 litres</strong>.<br>Litres are used for everyday liquid volumes you can see and carry. 9 litres is roughly what fits in a large bucket — just right to flush a toilet. Modern eco-flush toilets use 4–6 litres."
+  },
+  {
+    scenario: "A typical family car (like a Ford Focus) weighs about 1.5 ___.<br>Which unit makes sense for a car's weight?",
+    svg: svgCar,
+    options: [
+      { unit: "g",      meaning: "— grams: lighter than a bag of crisps (you could lift it with a finger)", correct: false },
+      { unit: "kg",     meaning: "— kilograms: about the weight of a heavy suitcase (1.5kg is far too light)", correct: false },
+      { unit: "tonnes", meaning: "— tonnes: 1 tonne = 1,000 kg — a car is about 1.5 tonnes (1,500 kg)", correct: true },
+      { unit: "mg",     meaning: "— milligrams: lighter than a grain of rice (microscopic)", correct: false },
+    ],
+    explanation: "A car weighs about <strong>1.5 tonnes</strong>.<br>1 tonne = 1,000 kg. A family car at 1,500 kg (1.5 tonnes) is heavy enough that you'd never lift it — you need a jack just to change a tyre. Tonnes are used for vehicles, lorries, and large heavy objects."
+  },
+  {
+    scenario: "A large commercial passenger plane (like a Boeing 737) weighs about 300 ___ when empty.<br>Which unit makes sense?",
+    svg: svgPlane,
+    options: [
+      { unit: "kg",     meaning: "— kilograms: about 3 adults (300kg is lighter than a grand piano)", correct: false },
+      { unit: "tonnes", meaning: "— tonnes: 300 × 1,000 kg = 300,000 kg — realistic for a large aircraft", correct: true },
+      { unit: "g",      meaning: "— grams: lighter than a tin of beans (completely impossible)", correct: false },
+      { unit: "mg",     meaning: "— milligrams: lighter than a grain of rice (microscopic)", correct: false },
+    ],
+    explanation: "A passenger plane weighs about <strong>300 tonnes</strong>.<br>That's 300,000 kg — roughly the same as 200 family cars. Large aircraft are always measured in tonnes because kilograms would give unwieldy numbers in the hundreds of thousands."
+  }
 ];
 
 // ── Quiz Logic ────────────────────────────────────────────────────────────────
@@ -349,6 +511,7 @@ function startQuiz() {
 
     card.innerHTML = `
       <div class="card-num">Question ${qi + 1} of ${questions.length}</div>
+
       <div class="question-text">${q.scenario}</div>
       <div class="diagram">${q.svg}</div>
       <div class="options" id="opts-${qi}">${optsHtml}</div>
